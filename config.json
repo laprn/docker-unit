@@ -1,0 +1,15 @@
+{
+    "listeners": {
+        "*:8081": {
+            "application": "flask"
+        }
+    },
+    "applications": {
+        "flask": {
+            "type": "python 3.9",
+            "path": "/usr/local/nginx/app/",
+            "module": "wsgi",
+            "callable": "app"
+        }
+    }
+}
